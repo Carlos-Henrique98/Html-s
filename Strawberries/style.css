@@ -142,11 +142,12 @@ span{
     text-align: center;
     opacity: .4;
     position: relative;
+    margin-left: 160px;
 }
 
 .social-icons img{
     height:20px ;
-    width:0 14px ;
+    margin:0 14px ;
 }
 
 .social-icons::after{

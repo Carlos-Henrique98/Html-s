@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+    transition: all ease 0.5s;
+}
+
+header{
+    padding:  25px 60px;
+}
+
+.logo{
+    float: left;
+    font-size: 24px;
+    font-weight: 600;
+    color:#000;
+}
+
+.menu{
+    float: right;
+}
+
+ul{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size:  14px;
+    text-transform: uppercase;
+    padding: 0 24px;
+}
+
+ul li:last-child a{
+    padding-right: 0;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    width: 90%;
+}
+
+.carl-image{
+    margin: 60px 60px 40px;
+    width: 380px;
+    float: left;
+}
+
+.carl-text{
+    float: left;
+    margin: 160px 0;
+}
+
+.carl-text h1{
+    font-size: 72px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.carl-text h1 b{
+    font-weight: 600;
+}
+
+.carl-text h5{
+    font-weight: 400;
+    font-size: 18px;
+    margin: -10px 5px 0;
+    display: block;
+    position: relative;
+}
+
+.carl-text h5:after{
+    content:'';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+    top:50%;
+    right: 0;
+}
+
+.content .next-btn{
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#000;
+    font-size:14px;
+}
+
+ul li.switch a{
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+    border: 1px solid #000;
+    border-radius: 50px;
+}
+
+ul li.switch a:before{
+    content:'';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: #000;
+    left: 4px;
+    top: 3px;
+    transition: all ease 0.5s;
+}
+
+.switchMode ul li.switch a:before{
+    left:24px;
+}
+
+.switchMode{
+    background-color: #000;
+    color:#fff;
+}
+
+.switchMode .logo,
+.switchMode ul li a,
+.switchMode .content .next-btn{
+    color:#fff;
+}
+
+.switchMode .carl-text h5:after{
+    background-color: #fff;
+}
+
+.switchMode ul li.switch a{
+    background-color: #fff;
+    border-color: #fff;
+}

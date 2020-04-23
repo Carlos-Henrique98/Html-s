@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio landing page design with darkmode and Greensock animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <header>
+            <div class="logo">Carl.</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="switch"><a href="javascript:void(0);"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="carl-image">
+                <img src="img/man.jpg" alt="">
+            </div>
+            <div class="carl-text">
+                <h1>Carl <b>Naguyen</b></h1>
+                <h5>Visual Designer & Director</h5>
+            </div>
+            <a href="#" class="next-btn">Next</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+
+        $(function(){
+            $(".switch").click(function(){
+                $("body").toggleClass("switchMode");
+            });
+        });
+    </script>
+</body>
+</html>

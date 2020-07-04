@@ -7,5 +7,5 @@ botao.onclick = function(){
 }
 
 fechar.onclick = function(){
-    fundo.classList.remove("visivel")
+    fundo.classList.remove("visivel");
 }

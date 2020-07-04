@@ -4,136 +4,170 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Curriculo - Zup</title>
+        <link rel="icon" href="img/curriculo.png">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-            <header>
-                <div id="container-cabecalho">
-                    <div class="container-image">
-                        <img src="img/perfil.jpg" alt="">
-                    </div>
-                    <div class="conteudo">
-                        <div class="nome-pessoa">
-                            <h2>Nome Sobrenome</h2>
-                        </div>
-                        <div class="cargo">
-                            <h2>Cargo/Função</h2>
-                        </div>
-                    </div>
+        <header>
+            <nav>
+                <button data-modal-target="#modal" type="button">Novo Curriculo</button>
+            </nav>
+        </header>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title">
+                    <p>Cadastro de Usuários:</p>
                 </div>
-            </header>
-
-            <section>
-
-                <div class="info-perfil">
-                    <div class="contatos">
-                        <div class="contato-telefone ">
-                            <h1>Contatos</h1>
-                            <div class="info-phone">
-                                <h3>Telefone:</h3>
-                                <p>99 9 9999-9999</p>
-                            </div>
-                        </div>
-                        <div class="contato-email ">
-                            <div class="info-email">
-                                <h3>Email:</h3>
-                                <p>contato@me.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contato-endereco">
-                            <h3>Endereço:</h3>
-                            <p>Bairro-Cidade - UF</p>
-                        </div>
+                <button data-close-button="data-close-button" class="close-button">&times;</button>
+            </div>
+            <form action="#" name="fCadastro">
+                <div class="modal-body">
+                    <div id="input-nome">
+                        <input type="Nome" name="txtNome" required="required" placeholder="Nome Completo:">
                     </div>
-                    <div class="perfil">
-                        <h1>Perfil</h1>
-                        <div class="container-perfil1">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, autem nam nobis porro earum doloribus!
-                                <br>Distinctio, odit nihil? Rem tempore ipsa dolorum libero consequatur praesentium quidem possimus vel unde quos.
-                            </p>
 
-                        </div>
-
-                        <div class="container-perfil2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, autem nam nobis porro earum doloribus!
-                                <br>Distinctio, odit nihil? Rem tempore ipsa dolorum libero consequatur praesentium quidem possimus vel unde quos.
-                            </p>
-
-                        </div>
-
-                        <div class="container-perfil3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, autem nam nobis porro earum doloribus!
-                                <br>Distinctio, odit nihil? Rem tempore ipsa dolorum libero consequatur praesentium quidem possimus vel unde quos.
-                            </p>
-
-                        </div>
+                    <div id="input-cargo">
+                        <input type="Cargo" name="txtCargo" required="required" placeholder="Cargo/Função:">
                     </div>
+                    <button class="botao" id="novoCadastro" type="button" name="btnCadastrar" value="Validar" onclick="cadastroDados()">Cadastrar</button>
                 </div>
+            </form>
+        </div>
+        <div id="overlay"></div>
 
-                <div class="info-perfil1">
-                    <div class="formacao-academica">
-                        <div class="form1">
-                            <h1>Formação Acadêmica</h1>
-                            <div class="info-form1">
-                                <p>2020-2020</p>
-                                <h3>Curso/Formação</h3>
-                                <p>Nome da Instiuição</p>
-
-                            </div>
-                        </div>
-
-                        <div class="form2">
-                            <div class="info-form2">
-                                <p>2020-2020</p>
-                                <h3>Curso/Formação</h3>
-                                <p>Nome da Instiuição</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experiencia-profissional">
-                        <div class="exper1">
-                            <h1>Experiências Profissionais</h1>
-                            <div class="container-experiencia1">
-                                <p>2020-2020</p>
-                                <p>Cargo/Função | Nome da Empresa</p>
-                                <p>Faça aqui, um resumo da sua experiência profissional usando frases curtas,evitando descrições longas e extremament técnicas.<br>
-                                    Não se esqueça de ter foco e fazer um link entre o objetivo, apresentando o resumo das suas qualificações.
-                                </p>
-
-                            </div>
-                        </div>
-
-                        <div class="exper2">
-                            <div class="container-experiencia2">
-                                <p>2020-2020</p>
-                                <p>Cargo/Função | Nome da Empresa</p>
-                                <p>Faça aqui, um resumo da sua experiência profissional usando frases curtas,evitando descrições longas e extremament técnicas.<br>
-                                    Não se esqueça de ter foco e fazer um link entre o objetivo, apresentando o resumo das suas qualificações.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div id="container-cabecalho">
+            <div class="container-image">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <div id="registro" class="conteudo">
+                <div class="nome-pessoa">
+                    <h2>Nome Completo</h2>
                 </div>
-
-                <div class="outros-cursos">
-                    <h1>Outros Cursos</h1>
-                    <div class="outros-info1">
-                        <p>2020-2020</p>
-                        <h3>Curso/Formação</h3>
-                        <p>Nome da Instituição</p>
-                    </div>
-
-                    <div class="outros-info2">
-                        <p>2020-2020</p>
-                        <h3>Curso/Formação</h3>
-                        <p>Nome da Instituição</p>
-                    </div>
-
+                <div class="cargo">
+                    <h2>Cargo/Função</h2>
                 </div>
             </div>
-        </section>
+        </div>
+
+        <section>
+            <div class="info-perfil">
+                <div class="contatos">
+                    <div class="contato-telefone ">
+                        <h1>Contatos</h1>
+                        <div class="info-phone">
+                            <h3>Telefone:</h3>
+                            <p>99 9 9999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contato-email ">
+                        <div class="info-email">
+                            <h3>Email:</h3>
+                            <p>contato@me.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contato-endereco">
+                        <h3>Endereço:</h3>
+                        <p>Bairro-Cidade - UF</p>
+                    </div>
+                </div>
+                <div class="perfil">
+                    <h1>Perfil</h1>
+                    <div class="container-perfil1">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, autem nam nobis porro earum doloribus!
+                            <br>Distinctio, odit nihil? Rem tempore ipsa dolorum libero consequatur praesentium quidem possimus vel unde quos.
+                        </p>
+
+                    </div>
+
+                    <div class="container-perfil2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, autem nam nobis porro earum doloribus!
+                            <br>Distinctio, odit nihil? Rem tempore ipsa dolorum libero consequatur praesentium quidem possimus vel unde quos.
+                        </p>
+
+                    </div>
+
+                    <div class="container-perfil3">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, autem nam nobis porro earum doloribus!
+                            <br>Distinctio, odit nihil? Rem tempore ipsa dolorum libero consequatur praesentium quidem possimus vel unde quos.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-perfil1">
+                <div class="formacao-academica">
+                    <div class="form1">
+                        <h1>Formação Acadêmica</h1>
+                        <div class="info-form1">
+                            <p>2020-2020</p>
+                            <h3>Curso/Formação</h3>
+                            <p>Nome da Instiuição</p>
+
+                        </div>
+                    </div>
+
+                    <div class="form2">
+                        <div class="info-form2">
+                            <p>2020-2020</p>
+                            <h3>Curso/Formação</h3>
+                            <p>Nome da Instiuição</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experiencia-profissional">
+                    <div class="exper1">
+                        <h1>Experiências Profissionais</h1>
+                        <div class="container-experiencia1">
+                            <p>2020-2020</p>
+                            <p>Cargo/Função | Nome da Empresa</p>
+                            <p>Faça aqui, um resumo da sua experiência profissional usando frases curtas,evitando descrições longas e extremament técnicas.<br>
+                                Não se esqueça de ter foco e fazer um link entre o objetivo, apresentando o resumo das suas qualificações.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="exper2">
+                        <div class="container-experiencia2">
+                            <p>2020-2020</p>
+                            <p>Cargo/Função | Nome da Empresa</p>
+                            <p>Faça aqui, um resumo da sua experiência profissional usando frases curtas,evitando descrições longas e extremament técnicas.<br>
+                                Não se esqueça de ter foco e fazer um link entre o objetivo, apresentando o resumo das suas qualificações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="outros-cursos">
+                <h1>Outros Cursos</h1>
+                <div class="outros-info1">
+                    <p>2020-2020</p>
+                    <h3>Curso/Formação</h3>
+                    <p>Nome da Instituição</p>
+                </div>
+
+                <div class="outros-info2">
+                    <p>2020-2020</p>
+                    <h3>Curso/Formação</h3>
+                    <p>Nome da Instituição</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contador-Cadastros">
+            <p>Quantidade de Cadastros:</p>
+            <p id="cont">0</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

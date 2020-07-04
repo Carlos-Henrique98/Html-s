@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p,h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-image img{
+    width:400px;
+    height:300px;
+}
+
+.container-image{
+    padding: 0px 0px 0px 10px;
+}
+
+#container-cabecalho{
+    margin: 40px;
+    padding: 50px 10px 30px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo{
+    padding: 0px 250px 0 0;
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+.conteudo h2{
+    display: flex;
+    justify-content: center;
+}
+
+.nome-pessoa{
+    padding: 20px 30px 10px 0;
+}
+
+/*Espacamento Lateral*/
+.contatos{
+    padding:0 0 50px 140px;
+}
+
+.contato-telefone h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-telefone h1{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(202, 198, 198);
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.info-phone{
+    padding: 20px 0 20px 0;
+}
+
+.info-email{
+    padding: 0px 0 20px 0;
+}
+
+
+.info-perfil{
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*==================================
+              Perfil
+===================================*/
+
+.perfil{
+    padding: 0px 70px 0 0;
+}
+
+.perfil h1{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+}
+
+.perfil h1{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 800px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-perfil1{
+    padding: 20px 0 20px 0;
+}
+
+.container-perfil2{
+    padding: 0px 0 20px 0;
+}
+
+.container-perfil3{
+    padding: 0px 0 20px 0;
+}
+
+.info-perfil1{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ===================================
+          Espaco Experiencia
+=====================================*/
+.experiencia-profissional{
+    padding: 0px 55px 0 0;
+}
+
+.exper1 h1{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 10px;
+}
+
+.exper1 h1{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 800px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container-experiencia1{
+    padding: 20px 0 20px 0;
+}
+
+.container-experiencia2{
+    padding: 0px 0 20px 0;
+}
+
+/*Espacamento Lateral*/
+.formacao-academica{
+    padding:0 0 50px 140px;
+}
+
+.form1 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form1 h1{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(202, 198, 198);
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.info-form1{
+    padding: 20px 0 20px 0;
+}
+
+.info-form2{
+    padding: 0px 0 20px 0;
+}
+
+/*==============================
+        OUTROS CURSOS
+===============================*/
+.outros-cursos{
+    padding:0 0 50px 140px;
+}
+
+.outros-cursos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outros-cursos h1{
+    font-size: 25px;
+    color: white;
+    background-color: rgb(202, 198, 198);
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+}
+
+.outros-info1{
+    padding: 20px 0 20px 0;
+}
+
+.outro-info2{
+    padding: 0px 0 20px 0;
+}

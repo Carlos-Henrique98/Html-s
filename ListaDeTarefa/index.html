@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarefas List</title>
+        <link rel="shortcut icon" href="./img/lista.png">
+        <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="script.js">
+    </head>
+    <body>
+
+        <div class="background-image">
+            <div class="container">
+                <div class="logo">List Taref<span>
+                        's</span>
+                </div>
+                <div class="header">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Cadastro</a>
+                            </li>
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                            <li>
+                                <a href="#">Sobre</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container-info">
+                    <h1 class="title" id="list">Lista de Tarefas :</h1>
+                    <h2 class="titulo" id="list">
+                        <span>Fazer | Fazendo | Feito</span></h2>
+                    <div class="botao">
+                        <a href="#myList" class="btn">Realizar Tarefa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="list-tarefas">
+            <p>- Verifique -<br>- as Tarefas do seu dia a dia -</p>
+        </div>
+
+        <div class="banner">
+            <video src="videos/fundo.mp4" autoplay="autoplay" muted="muted" loop="loop" type="mp4"></video>
+
+            <form action="" class="input-listt">
+                <div class="input-tarefas">
+                    <input class="input" type="text" id="addTarefa" placeholder="Informe uma tarefa:">
+                    <button class="btn-inserir" type="button" name="" value="Adicionar" onclick="Adicionar();"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                </div>
+                <div class="btn-tarefas">
+                </div>
+            </form>
+
+            <div class="fundo-black">
+                <div class="descricao-tarefas">
+                    <div class="descr">
+                        <p>| Tarefas |</p>
+                    </div>
+                </div>
+                <div class="tarefs-registro">
+                    <div class="descr-info" id="dimensao-taref">
+                        <ul id="myList" class="tarefas-hover">
+                             
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

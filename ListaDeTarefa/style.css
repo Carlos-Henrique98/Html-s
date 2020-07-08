@@ -131,7 +131,6 @@ nav>ul>li>a{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* opacity: 0.9; */
     pointer-events: none;
 }
 
@@ -148,7 +147,6 @@ nav>ul>li>a{
     padding: 80px 0 0 0;
 }
 
-/*icone*/
 .input-tarefas input{
     padding: 12px;
     width: 80%;
@@ -157,18 +155,11 @@ nav>ul>li>a{
     opacity: 0.7;
 }
 
-.iconeClick{
-    position: relative;
-    z-index: 2;
-}
-
 .input-tarefas img{
     width: 30px;
     height: 25px;
     cursor: pointer;
 }
-
-/*botao-adicionar*/
 
 .btn-inserir{
     position: relative;
@@ -188,32 +179,11 @@ input[type="button"]{
     height: 35px;
 }
 
-#posicaoF{
-    position: relative;
-    z-index: 2;
-    width: 150px;
-    height: 130px;
-}
-
-.container-Qtd{
-   display: flex;
-   justify-content: space-around;
-   padding: 30px 0 0 0;
-}
-
-#posicaoF #number-centro p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-}
-
 .descricao-tarefas{
     position: relative;
     z-index: 2;
 }
 
-/**/
 .descr{
     background-color: rgba(255, 94, 1, 0.76);
     width: 30%;
@@ -237,7 +207,6 @@ input[type="button"]{
     padding: 80px 0 0 0;
 }
 
-/**/
 .tarefs-registro{
     padding: 20px 0 0 0;
     position: relative;
@@ -250,14 +219,12 @@ input[type="button"]{
 .descr-info{
     border: 2px;
     border-radius: 5px solid #000;
-    /* background-color: rgba(255, 255, 255, 0.418); */
     width: 30%;
     height: 100%;
     border-radius: 10px;
 }
 
 ul>#myList>li {
-    /* padding: 10px; */
     background-color: rgba(0,0,0,0.5);
     overflow-y: auto;
 }
@@ -273,27 +240,51 @@ ul>#myList>li {
     background-color: rgba(255, 255, 255, 0.219);
 }
 
-li>.list{
-    background-color: rgba(3, 3, 3, 0.534);
-}
-
 button{
     padding: 10px 10px 10px 10px;
     float: right;
     background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 2px solid #000;
 }
 
 button:hover{
-    background-color: rgb(255, 106, 0);
+    background-color: rgba(0, 0, 0, 0.582);
 }
 
-.btn-tarefas>button{
-    float: right;
-    width: 25px;
-    padding: 5px;
+
+@media (max-width: 530px)
+{
+    .titulo{
+        width: 50%;
+        height: 60px;
+    }
+
+    .titulo span{
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo{
+        font-size: 22px;
+    }
 }
 
-/* .tarefas-hover{
-    border-radius: 0;
-    background-color: red;
-} */
+@media (max-width:400px){
+    .titulo{
+        width: 39%;
+        height: 50px;
+    }
+
+    .titulo span{
+        font-size: 30px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .logo{
+        font-size: 20px;
+    }
+}
+

@@ -3,35 +3,38 @@ var li;
 var itemId;
 var item;
 
+Adicionar = function () {
 
-Adicionar = function(){
-    
-    if(document.getElementById("addTarefa").value != ""){
+    if (document.getElementById("addTarefa").value != "") {
 
         item = document.getElementById("addTarefa");
+
         itemId = ul.childElementCount;
-        li = criarItemEl(item.value,itemId);
+
+        li = criarItemEl(item.value, itemId);
+
         li.appendChild(criarRemoveBtn(itemId));
+
         ul.appendChild(li);
+
         item.value = "";
     }
-    else{
+    else {
         alert("Digite uma tarefa no campo!");
     }
 }
 
-removerTarefa = function(itemId){
-    for( i = 0 ; i < ul.children.length ; i++){
+removerTarefa = function (itemId) {
+    for (i = 0; i < ul.children.length; i++) {
 
-        if(ul.children[i].getAttribute("index") == itemId ){
+        if (ul.children[i].getAttribute("index") == itemId) {
 
             ul.children[i].remove();
-
         }
     }
 }
 
-criarItemEl = function(itemValue, itemId){
+criarItemEl = function (itemValue, itemId) {
 
     let li = document.createElement("li");
 
@@ -42,10 +45,12 @@ criarItemEl = function(itemValue, itemId){
     return li;
 }
 
-criarRemoveBtn = function(itemId){
-    var icone = document.getElementsByTagName("i").innerHTML;
+criarRemoveBtn = function (itemId) {
     let btn = document.createElement("button");
-    btn.setAttribute("onclick", "removerTarefa("+itemId+")");
-    btn.innerHTML = icone;
+
+    btn.setAttribute("onclick", "removerTarefa(" + itemId + ")");
+
+    btn.innerHTML = "X";
+
     return btn;
 }

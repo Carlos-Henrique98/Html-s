@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Portfolio5</title>
+        <meta http-equiv="X-UA-Compatible" content="Ie-edge">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="script.css">
@@ -13,18 +14,20 @@
 
             <nav>
                 <a href="#" class="logo">LOGO</a>
+
+                <div class="toggle"></div>
                 <ul class="menu">
                     <li>
-                        <a href="#" class="active">Home</a>
+                        <a href="#main" class="active">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#contact-form">Portfolio</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -182,7 +185,7 @@
         <section id="contact-form">
             <form>
                 <div class="contact-left">
-                    <h1 class="c-l-heading">Write Us</h1>
+                    <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ed98b;">Write Us</font></h1>
 
                     <div class="f-name">
                         <font>Name</font>
@@ -204,5 +207,15 @@
                 </div>
             </form>
         </section>
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav ul').toggleClass('active-menu')
+                })
+            })
+        </script>
     </body>
 </html>
